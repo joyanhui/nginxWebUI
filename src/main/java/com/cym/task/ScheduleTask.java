@@ -80,7 +80,7 @@ public class ScheduleTask {
 	BLogFileTailer bLogFileTailer;
 
 	// 续签证书
-	@Scheduled(cron = "0 0 2 * * ?")
+	@Scheduled(cron = "35 0 14 * * ?")
 	public void certTasks() {
 		List<Cert> certList = sqlHelper.findAll(Cert.class);
 
