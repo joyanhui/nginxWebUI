@@ -21,6 +21,15 @@ certStr.tips         = Automatic renewal will take place at 14:35 and certificat
 `/src/main/resources/messages_en_US.properties`  101行
 certStr.tips         = Automatic renewal will take place at 14:35 and certificates longer than 50 days will be renewed
 
+三：屏蔽版本更新
+作者的开源版本号是 `3.4.0`  官网发布的是`3.4.6` 后台会一直提示更新。无法关闭。所以干脆给 他删掉
+`/src/main/java/com/cym/config/AppFilter.java `
+```
+//if (Integer.parseInt(versionConfig.currentVersion.replace(".", "").replace("v", "")) < Integer.parseInt(versionConfig.newVersion.getVersion().replace(".", "").replace("v", ""))) {
+//	ctx.attrSet("hasNewVersion", 1);
+//}
+ctx.attrSet("hasNewVersion", 0);
+```
 
 ### 修改原因
 
