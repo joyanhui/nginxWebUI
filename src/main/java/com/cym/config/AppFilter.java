@@ -226,9 +226,10 @@ public class AppFilter implements Filter {
 		if (versionConfig.newVersion != null) {
 			ctx.attrSet("newVersion", versionConfig.newVersion);
 
-			if (Integer.parseInt(versionConfig.currentVersion.replace(".", "").replace("v", "")) < Integer.parseInt(versionConfig.newVersion.getVersion().replace(".", "").replace("v", ""))) {
-				ctx.attrSet("hasNewVersion", 1);
-			}
+			//if (Integer.parseInt(versionConfig.currentVersion.replace(".", "").replace("v", "")) < Integer.parseInt(versionConfig.newVersion.getVersion().replace(".", "").replace("v", ""))) {
+			//	ctx.attrSet("hasNewVersion", 1);
+			//}
+			ctx.attrSet("hasNewVersion", 0);
 		}
 
 		// 读取配置文件
