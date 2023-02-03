@@ -39,12 +39,9 @@ ctx.attrSet("hasNewVersion", 0);
 
 其他使用方法参考原作者，docker替换方法 `nginxwebui` 是容器名称
 
-```
-docker exec -it nginxwebui /bin/sh
-rm /home/nginxWebUI.jar
-exit # 退出容器
-docker cp nginxWebUI.jar nginxwebui:/home/nginxWebUI.jar
-```
+
+[使用方法.md](使用方法.md)
+
 
 ## 下载地址
 https://www.123pan.com/s/EqorVv-n0nPA  提取码:yhjt
