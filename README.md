@@ -45,4 +45,5 @@ ctx.attrSet("hasNewVersion", 0);
 
 ## 下载地址
 国内：  https://www.123pan.com/s/EqorVv-n0nPA  提取码:yhjt
+
 github： https://github.com/joyanhui/nginxWebUI/releases/download/2st/nginxWebUI.jar
